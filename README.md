@@ -1,29 +1,56 @@
-# Welcome to your Lovable project
+# EdgePulse AI
 
-This project was built with [Lovable](https://lovable.dev).
+### AI that remembers what machines forget.
 
-## Build with Lovable
+EdgePulse AI is a context-aware edge intelligence platform for predictive industrial machine maintenance.
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Instead of simply reporting that a machine is behaving abnormally, EdgePulse AI learns the machine's normal behavior, detects behavioral drift, remembers previous incidents, compares current behavior with historical patterns, predicts potential failures, and provides an explainable recommendation to the operator.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+---
 
-## Development
+## 🚀 The Problem
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Industrial machines continuously generate large amounts of sensor data such as:
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+- Temperature
+- Vibration
+- RPM
+- Load
+- Power consumption
+- Pressure
 
-## Built with
+Traditional monitoring systems often rely on fixed thresholds.
 
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+For example:
+
+> If temperature > 75°C → Alert
+
+The problem is that a fixed threshold does not understand the machine's individual behavior or historical context.
+
+A machine can start showing signs of failure gradually, long before a simple threshold is crossed.
+
+Operators also need more than an alert:
+
+> What changed?  
+> Have we seen this before?  
+> What could happen next?  
+> What should we do?
+
+---
+
+## 💡 Our Solution
+
+EdgePulse AI adds a contextual intelligence layer between machine data and the operator.
+
+It follows five core steps:
+
+```text
+DETECT
+   ↓
+REMEMBER
+   ↓
+UNDERSTAND
+   ↓
+PREDICT
+   ↓
+ACT
